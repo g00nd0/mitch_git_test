@@ -27,6 +27,7 @@ public class QuickStart {
 
 		for(int i=0;i<20;i++){ //change to 20 for git test
 			System.out.println(i);
+			System.out.println("Bitch!!!! test"); //added sysout for git test
 		}
 
 		//System.out.println(s);
