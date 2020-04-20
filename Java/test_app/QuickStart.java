@@ -63,10 +63,12 @@ public class QuickStart {
 		}
 
 		sc.close(); //this is for day 3 arrays/collections, for reading from file
-		*/
-		
+
 		//end of day3
 		*/
+		
+		
+		
 
 		/*
 		for(int i=0;i<20;i++){ //change to 20 for git test
