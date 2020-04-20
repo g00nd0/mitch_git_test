@@ -1,0 +1,29 @@
+package Java;
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class QuickStart {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		System.out.println("Hello World");
+		System.out.println("Enter your name dummy:");
+		Scanner in = new Scanner(System.in);
+		String s = in.nextLine();
+		
+		//Day2 - Dataflow Caleb Curry 30 days of java
+		if(s.equals("mitch")){
+			System.out.println("Hi Bitch.... i mean Mitch!");
+		}else if(s.equals("sab")){
+				System.out.println("Hi Sab!");
+				}else {
+					System.out.println("GO AWAY " + s + "!!!!");
+		}
+		//end of day2
+        
+        in.close(); //rmb to close scanner in or sc, otherwise will have resource leak, therefore vs code wont compile
+        
+    }
+
+}

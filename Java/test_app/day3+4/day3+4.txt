@@ -1,0 +1,52 @@
+package Java;
+
+import java.io.File; //enable for reading from file
+import java.io.FileNotFoundException;
+import java.util.List; //enable for reading from file
+import java.util.ArrayList; //enable for reading from file
+import java.util.Scanner;
+
+
+public class QuickStart{
+
+    public static void main(String[] args) throws   FileNotFoundException{
+
+		
+		//Day 3+4 - File collections and Arrays
+		File test_File = new File("C:\\Users\\mitch\\vs_projects\\mitch_git_test\\Java\\test_app\\test_file.txt");
+		Scanner sc = new Scanner(test_File);
+		List<String> students = new ArrayList<String>();
+		while(sc.hasNextLine()) {
+			students.add(sc.nextLine());
+		
+		}
+		for(int i=0; i<students.size(); i++){
+			System.out.println("name: "+students.get(i));
+		}
+
+		sc.close(); //this is for day 3 arrays/collections, for reading from file
+		
+
+		/*
+		//	this section is for arrays
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter size:");
+		int size = in.nextInt();
+		int[] grades = new int[size];
+		System.out.println("Enter "+ size + " numbers:");
+		
+		for (int i = 0; i < size; i++) {
+			grades[i]=in.nextInt();
+		}
+
+		for (int i = 0; i < size; i++) {
+			System.out.println(grades[i]);
+		}
+  		
+		
+		in.close();
+        //end of day3+4
+		*/
+    }
+
+    }
