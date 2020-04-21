@@ -8,8 +8,10 @@ public class QuickStart{
  
     public static void main(String[] args){
         
+
+        //day 6 - Stacks explained - basically works as a FILO queue
         LinkedList<String> shit_list = new LinkedList<String>();
-        shit_list.push("Bitch"); //pushing to queue
+        shit_list.push("Bitch"); //pushing to queue for use as stack
         shit_list.push("cunt");
         shit_list.push("dick");
         

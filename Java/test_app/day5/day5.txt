@@ -8,6 +8,8 @@ public class QuickStart{
  
     public static void main(String[] args) throws   FileNotFoundException{
         
+        //day 5 - java collection framework
+
         LinkedList<String> shit_list = new LinkedList<String>();
         shit_list.add("Bitch"); //adding to queue
         shit_list.add("cunt");
