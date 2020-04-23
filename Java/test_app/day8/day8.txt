@@ -10,6 +10,8 @@ public class QuickStart{
  
     public static void main(String[] args){
         
+
+        //day 8 - backtracking maze solving intro, intro to using 2D arrays, how to index them
         int[][] data = {
             {4,6,3,10},
             {4,2,40,1}, //all 2D arrays in java are jagged arrays, meaning can be of any size (rows, or vice versa)
