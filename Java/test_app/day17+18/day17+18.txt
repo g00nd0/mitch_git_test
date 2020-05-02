@@ -1,0 +1,30 @@
+package Java;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class QuickStart{
+ 
+    //Day 17 + 18: Java Collections Framework, Hashing and HashMaps
+    public static void main(String[] args){
+        HashMap<String, Integer> ids = new HashMap<String, Integer>(); //new hashmap definition
+        ids.put("Mitch Goon", 5);   // adding keys (names in this case) with their respective indexes or ids here
+        ids.put("Sab Sulong", 7);
+        ids.put("asshole", 4);
+
+        System.out.println(ids.get("Sab Sulong"));
+        System.out.println(ids.get("asshole")); // getting the id based on the given string key
+
+        ids.put("bernie", ids.get("asshole"));  // trying to enter a new key to id, but not that both keys occupy same id at output, how to resolve?
+        ids.put("Sab Sulong", ids.get("Sab Sulong") - 1);   //updating a key to a diff id, but in this case its just by decrementing using the old id
+          
+        Set<String> keys = ids.keySet();
+        for(String key : keys){
+            System.out.println(key);
+            System.out.println(ids.get(key));
+        }
+
+    }
+
+
+}
