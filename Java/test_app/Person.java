@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-//Day 20: Overriding hashCode() and equals()
+//Day 23: Generics with Multiple Types
 
 public class Person {
     String email;
@@ -10,6 +10,10 @@ public class Person {
     Person(String email, String last_name){ // create constructor here
         this.email = email;
         this.last_name = last_name;
+    }
+
+    Person(){ // contructor for Admin class, for inheritance
+
     }
 
     @Override                     
